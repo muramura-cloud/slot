@@ -133,9 +133,13 @@
     }
     if(panels[0].img.src===panels[1].img.src||panels[0].img.src===panels[2].img.src) {
       const url=panels[0].img.src;
+      const atrUrl=panels[0].img.getAttribute("src");
       const bonusUrl=url.slice(0,-4)+'bonus.png';
       bonusImage.src=bonusUrl;
-      model=bonusUrl.substr(58,1);
+      model=atrUrl.substr(4,1);
+      // model=bonusUrl.substr(58,1);
+      console.log(model);
+      console.log(atrUrl);
       console.log(model);
     }
     if(panels[1].img.src!==panels[0].img.src&&panels[1].img.src!==panels[2].img.src) {
@@ -143,9 +147,12 @@
     }
     if(panels[1].img.src===panels[0].img.src||panels[1].img.src===panels[2].img.src) {
       const url=panels[1].img.src;
+      const atrUrl=panels[0].img.getAttribute("src");
       const bonusUrl=url.slice(0,-4)+'bonus.png';
       bonusImage.src=bonusUrl;
-      model=bonusUrl.substr(58,1);
+      // model=bonusUrl.substr(58,1);
+      console.log(model);
+      console.log(atrUrl);
       console.log(model);
     }
     if(panels[2].img.src!==panels[0].img.src&&panels[2].img.src!==panels[1].img.src) {
@@ -153,9 +160,12 @@
     }
     if(panels[2].img.src===panels[0].img.src||panels[2].img.src===panels[1].img.src) {
       const url=panels[2].img.src;
+      const atrUrl=panels[0].img.getAttribute("src");
       const bonusUrl=url.slice(0,-4)+'bonus.png';
       bonusImage.src=bonusUrl;
-      model=bonusUrl.substr(58,1);
+      // model=bonusUrl.substr(58,1);
+      console.log(model);
+      console.log(atrUrl);
       console.log(model);
     }
   }
