@@ -150,6 +150,7 @@
       const atrUrl=panels[0].img.getAttribute("src");
       const bonusUrl=url.slice(0,-4)+'bonus.png';
       bonusImage.src=bonusUrl;
+      model=atrUrl.substr(4,1);
       // model=bonusUrl.substr(58,1);
       console.log(model);
       console.log(atrUrl);
@@ -163,6 +164,7 @@
       const atrUrl=panels[0].img.getAttribute("src");
       const bonusUrl=url.slice(0,-4)+'bonus.png';
       bonusImage.src=bonusUrl;
+      model=atrUrl.substr(4,1);
       // model=bonusUrl.substr(58,1);
       console.log(model);
       console.log(atrUrl);
